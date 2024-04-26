@@ -4,7 +4,7 @@ cask "oclint" do
   arch arm: "arm64", intel: "x86_64"
 
   version "22.02.1"
-  sha256 arm: "b18196a459f1b30bb4b6849b5952327458671ff9f65b30c9766e8a430de23c35"
+  sha256 arm: "b18196a459f1b30bb4b6849b5952327458671ff9f65b30c9766e8a430de23c35",
          intel: "6f102a568af3a4344f9658b5f4bdf3d599a851456287bf7a1fae447891f7368c"
 
   url "https://github.com/oclint/oclint/releases/download/v#{ver}/oclint-#{ver}-llvm-13.0.1-#{arch}-darwin-macos-12.2-xcode-13.2.tar.gz",
