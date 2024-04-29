@@ -13,20 +13,13 @@ cask "oclint" do
   desc "Static source code analysis tool"
   homepage "https://oclint.org/"
 
-  on_arm do
-    binary "oclint-#{ver}/bin/oclint-json-compilation-database"
-    binary "oclint-#{ver}/bin/oclint-xcodebuild"
-    binary "oclint-#{ver}/bin/oclint"
-    binary "oclint-#{ver}/lib/clang", target: "#{HOMEBREW_PREFIX}/lib/clang"
-    binary "oclint-#{ver}/lib/oclint", target: "#{HOMEBREW_PREFIX}/lib/oclint"
-  end
+  binary "oclint-#{ver}/bin/oclint-json-compilation-database"
+  binary "oclint-#{ver}/bin/oclint-xcodebuild"
+  binary "oclint-#{ver}/bin/oclint"
+  binary "oclint-#{ver}/lib/clang", target: "#{HOMEBREW_PREFIX}/lib/clang"
+  binary "oclint-#{ver}/lib/oclint", target: "#{HOMEBREW_PREFIX}/lib/oclint"
 
   on_intel do
-    binary "oclint-#{ver}/bin/oclint-json-compilation-database"
-    binary "oclint-#{ver}/bin/oclint-xcodebuild"
-    binary "oclint-#{ver}/bin/oclint"
     binary "oclint-#{ver}/include/c++/v1", target: "#{HOMEBREW_PREFIX}/include/c++/v1"
-    binary "oclint-#{ver}/lib/clang", target: "#{HOMEBREW_PREFIX}/lib/clang"
-    binary "oclint-#{ver}/lib/oclint", target: "#{HOMEBREW_PREFIX}/lib/oclint"
   end
 end
